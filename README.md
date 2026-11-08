@@ -1,0 +1,1 @@
+# Skriptinis-Programavimas-LD-7-12
