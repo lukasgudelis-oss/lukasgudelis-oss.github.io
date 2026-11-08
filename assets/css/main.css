@@ -2853,3 +2853,5 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* CV social contact cards */
+.cv-social-card{display:flex;align-items:center;gap:16px;padding:22px;border:1px solid color-mix(in srgb,var(--default-color),transparent 85%);border-radius:12px;color:var(--default-color);height:100%;transition:all .25s ease;background:var(--surface-color)}.cv-social-card:hover{border-color:var(--accent-color);transform:translateY(-3px);color:var(--accent-color)}.cv-social-card>i:first-child{font-size:29px;color:var(--accent-color)}.cv-social-card span{display:flex;flex-direction:column;min-width:0;flex:1}.cv-social-card strong{font-size:18px}.cv-social-card small{font-size:13px;overflow-wrap:anywhere;opacity:.8}.cv-social-card>i:last-child{font-size:16px}
