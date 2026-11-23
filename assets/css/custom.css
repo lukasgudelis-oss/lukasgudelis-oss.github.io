@@ -160,3 +160,27 @@ body .dark-background {background-color:#10201b;}
 .cv-feedback-result dd {color:#f3fff9;margin:0;}
 #cv-feedback-average {color:#8df2ca;font-size:1.12rem;font-weight:700;}
 @media(max-width:575px) {.cv-feedback-result dl {grid-template-columns:1fr;gap:3px;}.cv-feedback-result dd {margin-bottom:9px;}}
+
+
+/* LD11: vienoda tipografija kontaktu puslapyje */
+.contact-page, .contact-page main, .contact-page .cv-feedback-panel,
+.contact-page .cv-feedback-panel label,
+.contact-page .cv-feedback-panel input,
+.contact-page .cv-feedback-panel textarea,
+.contact-page .cv-feedback-panel select,
+.contact-page .cv-feedback-panel button,
+.contact-page .cv-feedback-panel output,
+.contact-page .cv-feedback-panel span,
+.contact-page .cv-feedback-panel p,
+.contact-page .cv-feedback-panel dt,
+.contact-page .cv-feedback-panel dd,
+.contact-page .cv-field-error,
+.contact-page .cv-form-hint,
+.contact-page .navmenu a {
+  font-family: 'DM Sans', sans-serif !important;
+}
+.contact-page h1, .contact-page h2, .contact-page h3,
+.contact-page h4, .contact-page h5, .contact-page h6,
+.contact-page .page-title h1, .contact-page .section-title h2 {
+  font-family: 'Syne', sans-serif !important;
+}
