@@ -184,3 +184,9 @@ body .dark-background {background-color:#10201b;}
 .contact-page .page-title h1, .contact-page .section-title h2 {
   font-family: 'Syne', sans-serif !important;
 }
+
+/* LD11: telefono šalies pasirinkimas ir formos išdėstymas */
+.cv-phone-group{display:flex;gap:10px;align-items:stretch}
+.cv-phone-group #cv-country{flex:0 1 235px;min-width:145px;max-width:235px}
+.cv-phone-group #cv-phone{flex:1 1 180px;min-width:0}
+@media(max-width:560px){.cv-phone-group{flex-direction:column}.cv-phone-group #cv-country{max-width:none;flex:auto}}

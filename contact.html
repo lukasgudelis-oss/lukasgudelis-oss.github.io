@@ -20,7 +20,7 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
 <!-- Main CSS File -->
-<link href="assets/css/main.css?v=11.4" rel="stylesheet"/><link href="assets/css/custom.css?v=11.4" rel="stylesheet"/>
+<link href="assets/css/main.css?v=11.4" rel="stylesheet"/><link href="assets/css/custom.css?v=11.5" rel="stylesheet"/>
 <!-- =======================================================
   * Template Name: FolioOne
   * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
@@ -57,6 +57,7 @@
 .cv-feedback-result dd{color:#f3fff9;margin:0}
 #cv-feedback-average{color:#8df2ca;font-size:1.12rem;font-weight:700}
 @media(max-width:575px){.cv-feedback-result dl{grid-template-columns:1fr;gap:3px}.cv-feedback-result dd{margin-bottom:9px}}
+.cv-phone-group{display:flex;gap:10px;align-items:stretch}.cv-phone-group #cv-country{flex:0 1 235px;min-width:145px;max-width:235px}.cv-phone-group #cv-phone{flex:1;min-width:0}@media(max-width:560px){.cv-phone-group{flex-direction:column}.cv-phone-group #cv-country{max-width:none;flex:auto}}
 </style>
 </head>
 <body class="contact-page">
@@ -99,9 +100,13 @@
  <form id="cv-feedback-form" novalidate>
   <div class="row g-3">
    <div class="col-md-6"><label for="cv-first">Vardas <span aria-hidden="true">*</span></label><input id="cv-first" name="vardas" class="form-control" type="text" autocomplete="given-name" required placeholder="Vardenis"/><small class="cv-field-error" id="err-first" aria-live="polite"></small></div>
+   <div class="col-md-6"><label for="cv-middle">Antras vardas (neprivalomas)</label><input id="cv-middle" name="antrasVardas" class="form-control" type="text" autocomplete="additional-name" placeholder="Antras vardas"/><small class="cv-field-error" id="err-middle" aria-live="polite"></small></div>
    <div class="col-md-6"><label for="cv-last">Pavardė <span aria-hidden="true">*</span></label><input id="cv-last" name="pavarde" class="form-control" type="text" autocomplete="family-name" required placeholder="Pavardenis"/><small class="cv-field-error" id="err-last" aria-live="polite"></small></div>
    <div class="col-md-6"><label for="cv-email">El. paštas <span aria-hidden="true">*</span></label><input id="cv-email" name="elpastas" class="form-control" type="email" autocomplete="email" required placeholder="vardas@pastas.lt"/><small class="cv-field-error" id="err-email" aria-live="polite"></small></div>
-   <div class="col-md-6"><label for="cv-phone">Telefono numeris <span aria-hidden="true">*</span></label><input id="cv-phone" name="telefonas" class="form-control" type="tel" autocomplete="tel" inputmode="numeric" maxlength="14" required placeholder="+370 600 00000"/><small class="cv-field-error" id="err-phone" aria-live="polite"></small></div>
+   <div class="col-md-6"><label for="cv-phone">Telefono numeris <span aria-hidden="true">*</span></label>
+     <div class="cv-phone-group"><select id="cv-country" class="form-control" aria-label="Telefono šalies kodas">
+       <option value="LT">🇱🇹 Lietuva (+370)</option><option value="LV">🇱🇻 Latvija (+371)</option><option value="EE">🇪🇪 Estija (+372)</option><option value="PL">🇵🇱 Lenkija (+48)</option><option value="DE">🇩🇪 Vokietija (+49)</option><option value="GB">🇬🇧 Jungtinė Karalystė (+44)</option><option value="US">🇺🇸 JAV / Kanada (+1)</option>
+     </select><input id="cv-phone" name="telefonas" class="form-control" type="tel" autocomplete="off" inputmode="numeric" required placeholder="600 00000"/></div><small class="cv-field-error" id="err-phone" aria-live="polite"></small></div>
    <div class="col-12"><label for="cv-address">Adresas <span aria-hidden="true">*</span></label><input id="cv-address" name="adresas" class="form-control" type="text" autocomplete="street-address" required placeholder="Miestas, gatvė"/><small class="cv-field-error" id="err-address" aria-live="polite"></small></div>
   </div>
   <div class="cv-rating-list">
@@ -110,7 +115,7 @@
    <div class="cv-rating"><label for="cv-rate-usability">Kaip vertinate bendrą svetainės patogumą?</label><div class="cv-rating-control"><input id="cv-rate-usability" name="patogumas" type="range" min="1" max="10" value="5"/><output for="cv-rate-usability">5</output><span>/ 10</span></div></div>
   </div>
   <div class="cv-form-actions"><button type="submit" id="cv-send" disabled>Siųsti</button><button type="button" id="cv-clear">Išvalyti</button></div>
-  <p class="cv-form-hint">* Privalomi laukai. Pavyzdinis telefono formatas: +370 600 00000.</p>
+  <p class="cv-form-hint">* Privalomi laukai. Pasirinkite šalį ir įveskite telefono numerį. Lietuvai: +370 6xx xxxxx.</p>
  </form>
  <div id="cv-feedback-result" class="cv-feedback-result" hidden aria-live="polite"><h3>Įvesti duomenys</h3><dl id="cv-feedback-data"></dl><p id="cv-feedback-average"></p></div>
  </div></div>
@@ -154,6 +159,6 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
-<script src="assets/js/custom.js" defer></script>
+<script src="assets/js/custom.js?v=11.5" defer></script>
 </body>
 </html>
