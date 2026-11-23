@@ -62,7 +62,30 @@
 <div class="col-md-6"><a class="cv-social-card" href="https://www.instagram.com/brxshi/" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i><span><strong>Instagram</strong><small>@brxshi</small></span><i class="bi bi-arrow-up-right"></i></a></div>
 <div class="col-md-6"><a class="cv-social-card" href="https://www.tiktok.com/@brxshi" rel="noopener noreferrer" target="_blank"><i class="bi bi-tiktok"></i><span><strong>TikTok</strong><small>@brxshi</small></span><i class="bi bi-arrow-up-right"></i></a></div>
 <div class="col-md-6"><a class="cv-social-card" href="https://linktr.ee/brxshi" rel="noopener noreferrer" target="_blank"><i class="bi bi-link-45deg"></i><span><strong>Linktree</strong><small>linktr.ee/brxshi</small></span><i class="bi bi-arrow-up-right"></i></a></div>
-</div></div></div></div></section></main>
+</div></div></div></div></section>
+<section class="section cv-feedback-section" id="cv-feedback">
+ <div class="container section-title"><h2>CV svetainės vertinimas</h2><p>Užpildykite formą ir įvertinkite svetainę. Duomenys pateikiami tik šiame puslapyje ir naršyklės konsolėje – niekur nesiunčiami.</p></div>
+ <div class="container"><div class="cv-feedback-panel">
+ <form id="cv-feedback-form" novalidate>
+  <div class="row g-3">
+   <div class="col-md-6"><label for="cv-first">Vardas <span aria-hidden="true">*</span></label><input id="cv-first" name="vardas" class="form-control" type="text" autocomplete="given-name" required placeholder="Vardenis"/><small class="cv-field-error" id="err-first" aria-live="polite"></small></div>
+   <div class="col-md-6"><label for="cv-last">Pavardė <span aria-hidden="true">*</span></label><input id="cv-last" name="pavarde" class="form-control" type="text" autocomplete="family-name" required placeholder="Pavardenis"/><small class="cv-field-error" id="err-last" aria-live="polite"></small></div>
+   <div class="col-md-6"><label for="cv-email">El. paštas <span aria-hidden="true">*</span></label><input id="cv-email" name="elpastas" class="form-control" type="email" autocomplete="email" required placeholder="vardas@pastas.lt"/><small class="cv-field-error" id="err-email" aria-live="polite"></small></div>
+   <div class="col-md-6"><label for="cv-phone">Telefono numeris <span aria-hidden="true">*</span></label><input id="cv-phone" name="telefonas" class="form-control" type="tel" autocomplete="tel" inputmode="numeric" maxlength="14" required placeholder="+370 600 00000"/><small class="cv-field-error" id="err-phone" aria-live="polite"></small></div>
+   <div class="col-12"><label for="cv-address">Adresas <span aria-hidden="true">*</span></label><input id="cv-address" name="adresas" class="form-control" type="text" autocomplete="street-address" required placeholder="Miestas, gatvė"/><small class="cv-field-error" id="err-address" aria-live="polite"></small></div>
+  </div>
+  <div class="cv-rating-list">
+   <div class="cv-rating"><label for="cv-rate-design">Kaip vertinate mano CV svetainės dizainą?</label><div class="cv-rating-control"><input id="cv-rate-design" name="dizainas" type="range" min="1" max="10" value="5"/><output for="cv-rate-design">5</output><span>/ 10</span></div></div>
+   <div class="cv-rating"><label for="cv-rate-projects">Kaip vertinate svetainėje pateiktus projektus?</label><div class="cv-rating-control"><input id="cv-rate-projects" name="projektai" type="range" min="1" max="10" value="5"/><output for="cv-rate-projects">5</output><span>/ 10</span></div></div>
+   <div class="cv-rating"><label for="cv-rate-usability">Kaip vertinate bendrą svetainės patogumą?</label><div class="cv-rating-control"><input id="cv-rate-usability" name="patogumas" type="range" min="1" max="10" value="5"/><output for="cv-rate-usability">5</output><span>/ 10</span></div></div>
+  </div>
+  <div class="cv-form-actions"><button type="submit" id="cv-send" disabled>Siųsti</button><button type="button" id="cv-clear">Išvalyti</button></div>
+  <p class="cv-form-hint">* Privalomi laukai. Pavyzdinis telefono formatas: +370 600 00000.</p>
+ </form>
+ <div id="cv-feedback-result" class="cv-feedback-result" hidden aria-live="polite"><h3>Įvesti duomenys</h3><dl id="cv-feedback-data"></dl><p id="cv-feedback-average"></p></div>
+ </div></div>
+</section>
+</main>
 <footer class="footer" id="footer">
 <div class="container">
 <div class="copyright text-center">
@@ -101,5 +124,6 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js" defer></script>
 </body>
 </html>
