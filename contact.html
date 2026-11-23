@@ -20,7 +20,7 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
 <!-- Main CSS File -->
-<link href="assets/css/main.css" rel="stylesheet"/><link href="assets/css/custom.css" rel="stylesheet"/>
+<link href="assets/css/main.css?v=11.3" rel="stylesheet"/><link href="assets/css/custom.css?v=11.3" rel="stylesheet"/>
 <!-- =======================================================
   * Template Name: FolioOne
   * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
@@ -28,7 +28,37 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-<meta content="Lukas Gudelis" name="author"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/></head>
+<meta content="Lukas Gudelis" name="author"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style id="ld11-critical-form-style">
+/* 11 LD: kritiniai kontaktų formos stiliai, kad GitHub Pages nerodytų neapipavidalintos formos */
+.cv-feedback-panel{max-width:950px;margin:auto;padding:clamp(20px,4vw,42px);border:1px solid rgba(119,221,175,.25);border-radius:22px;background:#193029;box-shadow:0 14px 38px rgba(0,0,0,.17)}
+.cv-feedback-panel label{display:block;margin-bottom:8px;font-weight:650;color:#e9f4ef;font-family:'DM Sans',sans-serif}
+.cv-feedback-panel .form-control{background:#10231e;color:#f3fff9;border:1px solid #406257;border-radius:11px;min-height:46px;padding:10px 13px}
+.cv-feedback-panel .form-control::placeholder{color:#9cb7ac}
+.cv-feedback-panel .form-control:focus{background:#10231e;color:#fff;border-color:#5bd7aa;box-shadow:0 0 0 3px rgba(91,215,170,.16)}
+.cv-feedback-panel .form-control.cv-invalid{border-color:#ff8585}
+.cv-field-error{display:block;min-height:19px;margin-top:4px;color:#ffaaaa;font-size:.83rem}
+.cv-rating-list{display:grid;gap:14px;margin-top:24px}
+.cv-rating{background:#10251f;border:1px solid rgba(119,221,175,.17);padding:16px;border-radius:14px}
+.cv-rating-control{display:flex;align-items:center;gap:10px}
+.cv-rating-control input[type=range]{flex:1;min-width:0;accent-color:#5bd7aa;cursor:pointer}
+.cv-rating-control output{font-size:1.15rem;font-weight:750;color:#8df2ca;min-width:20px;text-align:right}
+.cv-rating-control span{color:#afc9be}
+.cv-form-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.cv-form-actions button{border:1px solid #5bd7aa;border-radius:12px;padding:11px 24px;background:#5bd7aa;color:#08241b;font-weight:700;transition:transform .2s,background .2s}
+.cv-form-actions button:hover:not(:disabled){background:#8df2ca;transform:translateY(-2px)}
+.cv-form-actions button:disabled{opacity:.38;cursor:not-allowed}
+.cv-form-actions #cv-clear{background:transparent;color:#baf0d7}
+.cv-form-hint{margin:14px 0 0;color:#b6cec3;font-size:.9rem}
+.cv-feedback-result{margin-top:25px;border-top:1px solid rgba(119,221,175,.25);padding-top:24px}
+.cv-feedback-result[hidden]{display:none!important}
+.cv-feedback-result dl{display:grid;grid-template-columns:minmax(140px,1fr) 2fr;gap:10px 18px;overflow-wrap:anywhere}
+.cv-feedback-result dt{color:#a8c9b9;font-weight:600}
+.cv-feedback-result dd{color:#f3fff9;margin:0}
+#cv-feedback-average{color:#8df2ca;font-size:1.12rem;font-weight:700}
+@media(max-width:575px){.cv-feedback-result dl{grid-template-columns:1fr;gap:3px}.cv-feedback-result dd{margin-bottom:9px}}
+</style>
+</head>
 <body class="contact-page">
 <header class="header d-flex align-items-center light-background sticky-top" id="header">
 <div class="container position-relative d-flex align-items-center justify-content-between">
