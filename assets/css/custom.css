@@ -83,3 +83,49 @@ h1,h2,h3,h4,h5,h6 {font-weight:700;}
 /* Papildoma užduotis: dvi CSS figūros Apie mane puslapyje */
 .ld10-shapes{height:78px;position:relative;overflow:hidden;margin-bottom:8px}.ld10-orbit{position:absolute;left:18px;top:12px;width:49px;height:49px;border:5px solid #6de3ac;border-radius:50%;box-shadow:0 0 22px rgba(109,227,172,.2);animation:ld10-float 4s ease-in-out infinite}.ld10-diamond{position:absolute;left:115px;top:18px;width:38px;height:38px;background:linear-gradient(140deg,#74efb4,#2e8d65);border-radius:8px;animation:ld10-spin 8s linear infinite}@keyframes ld10-float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-13px) scale(1.09)}}@keyframes ld10-spin{to{transform:rotate(360deg)}}
 @media(max-width:900px){.ld10-board{grid-template-columns:1fr}.ld10-card-list{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.ld10-overview,.ld10-statistics{grid-template-columns:1fr}.ld10-card-list{grid-template-columns:1fr}.ld10-progress-top{flex-direction:column}.ld10-module{padding:65px 0}}@media(prefers-reduced-motion:reduce){.services-page .ld10-gradient-section,.ld10-orbit,.ld10-diamond{animation:none!important}.ld10-skill{transition:none}}
+
+
+/* LD10 FIX: unified site-wide green palette. Override FolioOne section presets. */
+:root {
+  --default-font:'DM Sans',sans-serif;
+  --heading-font:'Syne',sans-serif;
+  --nav-font:'DM Sans',sans-serif;
+  --background-color:#0d1917;
+  --default-color:#e9f4ef;
+  --heading-color:#f3fff9;
+  --accent-color:#5bd7aa;
+  --surface-color:#152622;
+  --contrast-color:#092219;
+  --nav-color:#e9f4ef;
+  --nav-hover-color:#8df2ca;
+  --nav-mobile-background-color:#152622;
+  --nav-dropdown-background-color:#10221c;
+  --nav-dropdown-color:#e9f4ef;
+  --nav-dropdown-hover-color:#8df2ca;
+}
+/* Main source of the mismatch: every inner page uses light-background. */
+body .light-background, body .dark-background,
+body section.light-background, body section.dark-background {
+  --background-color:#142620;
+  --default-color:#e9f4ef;
+  --heading-color:#f3fff9;
+  --surface-color:#1b302a;
+  --contrast-color:#092219;
+  --accent-color:#5bd7aa;
+}
+body .dark-background,body section.dark-background {--background-color:#10201b;--surface-color:#193029;}
+body {background:#0d1917;color:#e9f4ef;}
+body main,body .main,body footer,body .footer {color:var(--default-color);}
+body .section,body section {color:var(--default-color);}
+body .section-title h2,body .page-title h1 {color:#f3fff9;}
+body .section-title p,body .page-title p {color:#b9cfc5;}
+body .navmenu a,body .navmenu a:focus {font-family:'DM Sans',sans-serif;}
+body .navmenu a:hover,body .navmenu .active,body .navmenu .active:focus {color:#8df2ca;}
+body .navmenu .dropdown ul {background:#10221c;}
+body .navmenu .dropdown ul a {color:#e9f4ef;}
+body .navmenu .dropdown ul a:hover {color:#8df2ca;}
+body .footer,body #footer {background:#0d1917;border-top:1px solid rgba(126,228,184,.2);}
+body .footer .social-links a:hover {color:#092219;background:#5bd7aa;border-color:#5bd7aa;}
+/* Make sections that inherit FolioOne presets consistently green. */
+body .light-background {background-color:#142620;}
+body .dark-background {background-color:#10201b;}
